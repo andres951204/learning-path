@@ -67,4 +67,23 @@ The isNaN method coerce the value into a number and then, it makes the validatio
 
 A NaN is the only value on JavaScript that is not equal to itself.
 
-# Negative zero
+# Fundamental objects
+
+To create a **fundamental object** we use the keyword new.
+
+### Use new
+
+We should use **new** with the next fundamental objects:
+
+* Object()
+* Array()
+* Function()
+* Date()
+* RegExp()
+* Error()
+
+There are some cases in which the use of the **new** keybord is not recommended to be used:
+
+* String()
+* Number()
+* Boolean()

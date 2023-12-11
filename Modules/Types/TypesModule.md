@@ -69,11 +69,11 @@ A NaN is the only value on JavaScript that is not equal to itself.
 
 # Fundamental objects
 
-To create a **fundamental object** we use the keyword new.
+Fundamental objects are essentially the build-in objects orientation approach of JavaScript.
 
 ### Use new
 
-We should use **new** with the next fundamental objects:
+To create a **fundamental object** we use the keyword new. We should use **new** with the next fundamental objects:
 
 * Object()
 * Array()

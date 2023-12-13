@@ -48,7 +48,7 @@ If we are looking for a more certain approach to a validation of **is this an ar
 <samp>//true</samp>
 </code>
 
-> The result of the <code>typeof</code> evaluation of a nullish value will return <samp>"object"</samp>. This could be, because according to JavaScript specs, **null** is the default value, the empty value for a non-primitive type (objects and objects like values)
+> The result of the <code>typeof</code> evaluation of a nullish value will return <samp>"object"</samp>. This could be, because according to JavaScript specs, **null** is the default value for a non-primitive type (objects and objects like values)
 
 # Kind of emptiness
 

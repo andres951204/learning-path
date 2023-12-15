@@ -4,14 +4,6 @@ function isValidName(name) {
     return true
 }
 
-/*
-//Course response
-function isValidName(name) {
-    if(typeof name == "string" && name.trim().length >= 3) return true
-    return false
-}
-*/
-
 function hoursAttended(attended, length) {
     if (attended != null && attended != undefined && typeof attended != 'boolean' && length != null && length != undefined && typeof length != 'boolean'){
         if(typeof attended == "string" && attended.trim() == "" || typeof length == "string" && length.trim() == "" ) return false
@@ -23,22 +15,6 @@ function hoursAttended(attended, length) {
         return false
     }
 }
-
-/*
-//Course response
-function hoursAttended(name) {
-    if(typeof attended == "string" && attended.trim() != "") {
-        attended = Number(attended)
-    }
-    if(typeof length == "string" && length.trim() != "") {
-        length = Number(length)
-    }
-    if(typeof attended == "number" && typeof length == "number" && attended >= 0 && length >= 0 && Number.isInteger() && Number.isInteger(length) &&  attended <= length) {
-        return true
-    }
-    return false
-}
-*/
 
 // tests:
 console.log(isValidName("Frank") === true);

@@ -1,11 +1,12 @@
 //Arrow anonymous functions
 const getStudentById = (studentId) => (
-    studentRecords.find((id) => studentId == id)
+    studentRecords.find((record) => studentId == record.id)
 )
 
 const printRecords = (recordIds) => {
     const records = recordIds.map(getStudentById)
-    records.sort((record1, record2) => record1 - record2)
+    records.sort((record1, record2) =>
+        record1.name < record2.name ? -1 : record1.name > record2.name ? 1 : 0)
     records.forEach((record) => console.log(`${record.name} (${record.id}): ${record.paid ? "Paid" : "Not paid"}`));
 }
 
@@ -20,6 +21,7 @@ const remindUnpaid = (recordIds) => (
 )
 
 //Named functions
+/*
 function getStudentById(studentId) {
     return studentRecords.find(function matchId(id) {
         return studentId == id
@@ -29,7 +31,7 @@ function getStudentById(studentId) {
 function printRecords(recordIds) {
     const records = recordIds.map(getStudentById)
     records.sort(function sortByNameAsc(record1, record2) {
-        record1 - record2
+        record1.name - record2.name
     })
 
     records.forEach(function printRecord(record) {
@@ -54,7 +56,7 @@ function remindUnpaid(recordIds) {
 
     printRecords(unpaidIds)
 }
-
+*/
 // ********************************
 
 var currentEnrollment = [410, 105, 664, 375];
